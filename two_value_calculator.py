@@ -171,9 +171,9 @@ def run():
         user_input = str(input(' plese enter a arthimetic sum :'))
         if count > 0 and user_input.count("ans") == 1 :
             
-            previous_ans=str(ans)
+            previous_ans=str(ans) # storing previous ans 
             user_input = previous_ans + user_input 
-            user_input = user_input.replace("ans","")
+            user_input = user_input.replace("ans","") # removing the text "ans"
         ans = calculator(user_input)
         print(ans)
         if type(ans) != str: # checking for errors returned by functions 
